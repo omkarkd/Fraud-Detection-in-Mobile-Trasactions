@@ -117,7 +117,7 @@ plt.title('Hourly Transaction Amounts')
 ax = sns.scatterplot(x="step", y="amount", hue="isFraud",
                      data=smalldata)
 ```
-￼![fraud](https://raw.githubusercontent.com/fcamuz/fraud-detection-for-mobile-transactions/master/images/Slide7.png)
+![fraud](https://raw.githubusercontent.com/fcamuz/fraud-detection-for-mobile-transactions/master/images/Slide7.png)
 
 
 The plot clearly shows that there is some sort of seasonality in the number of transaction during the day. We observe a pattern every 24 hours. we do not know what time of the day '0' represent here but we observe highest transactions clusters around the middle of 24 hour period. It mught be noon or mid day. Lets see if fraud transactions has that kind of pattern.
@@ -130,14 +130,14 @@ plt.title('Hourly Fraud Transaction Amounts')
 ax = sns.scatterplot(x="step", y="amount", color='orange',
                      data=fraud)
 ```
-￼![fraud](https://raw.githubusercontent.com/fcamuz/fraud-detection-for-mobile-transactions/master/images/Slide8.png)
-￼ 
+![fraud](https://raw.githubusercontent.com/fcamuz/fraud-detection-for-mobile-transactions/master/images/Slide8.png)
+ 
 
 Fraud transactions does not show that significant pattern like safe ones in terms of number of accurance. They happen every hour almast in the same frequency. There are more fraud transactions in low amounts and less in high amount. But the pattern does not change time to time.
 
 ### Transaction Amount Distributions
 
-￼There is an interesting peak on 1M$. Lets see how many fraud transactions happens at 1M$. Safe transactions also more often in the low amounts . There is a peek in 1M dolar but above that the frequency decreases.
+There is an interesting peak on 1M$. Lets see how many fraud transactions happens at 1M$. Safe transactions also more often in the low amounts . There is a peek in 1M dolar but above that the frequency decreases.
 
 ```python
 # fraud transactions amount value counts

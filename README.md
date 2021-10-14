@@ -1,5 +1,4 @@
 
-![fraud](https://raw.githubusercontent.com/fcamuz/fraud-detection-for-mobile-transactions/master/images/Slide1.png)
 
 # A machine learning model for fraud detection in mobile  transactions
 
@@ -8,8 +7,6 @@ In this project I trained several models to detect fraud transactions. I have st
 
 ### Data
 I used Kaggle's Paysim dataset. It simulates mobile money transactions based on a sample of real transactions extracted from one month of financial logs from a mobile money service implemented in an African country. The original logs were provided by a multinational company, who is the provider of the mobile financial service which is currently running in more than 14 countries all around the world.
-
-https://www.kaggle.com/ntnu-testimon/paysim1
 
 **Dataset has fillowing columns:**
 
